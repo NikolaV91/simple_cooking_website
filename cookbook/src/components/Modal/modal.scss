@@ -1,0 +1,153 @@
+    @import "../../variables";
+    .modal-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.8);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 20vw;
+            min-height: 50vh;
+            border-radius: 25px;
+            padding-bottom: 1vh;
+            .menutitle {
+                font-family: "Water Brush", cursive;
+                font-size: 2em;
+                letter-spacing: 2px;
+                text-align: center;
+                margin-bottom: 1.5vh;
+                display: block;
+                border-bottom: 1px solid gray;
+                width: 100%;
+            }
+            .titles {
+                font-family: "Water Brush", cursive;
+                font-size: 1.2em;
+                margin-bottom: 0.1vh;
+                margin-right: 4vw;
+                letter-spacing: 1.2px;
+            }
+            .answ {
+                font-family: "Water Brush", cursive;
+            }
+            .modalinput {
+                border-radius: 25px;
+                border: 1px solid gray;
+                width: 15vw;
+                height: 2.8vh;
+            }
+            .modalinput:focus {
+                outline: none;
+                border: 3px solid #b4c5b6;
+                font-family: 'Poppins', sans-serif;
+            }
+            .radioflex {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 15vw;
+                font-family: 'Poppins', sans-serif;
+                span {
+                    margin-left: 0.5vw;
+                }
+            }
+            .divbtn {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 1vh;
+                .submitBtn {
+                    background-color: $color2;
+                    padding: 0.5vh 1vw;
+                    border-radius: 25px;
+                    border: none;
+                    font-size: 0.9em;
+                    color: white;
+                    margin-left: 0.5vw;
+                    margin-right: 2vw;
+                }
+                .submitBtn:hover {
+                    cursor: pointer;
+                    animation: shake 0.5s;
+                }
+                @keyframes shake {
+                    0% {
+                        transform: translate(1px, 1px) rotate(0deg);
+                    }
+                    10% {
+                        transform: translate(-1px, -2px) rotate(-1deg);
+                    }
+                    20% {
+                        transform: translate(-3px, 0px) rotate(1deg);
+                    }
+                    30% {
+                        transform: translate(3px, 2px) rotate(0deg);
+                    }
+                    40% {
+                        transform: translate(1px, -1px) rotate(1deg);
+                    }
+                    50% {
+                        transform: translate(-1px, 2px) rotate(-1deg);
+                    }
+                    60% {
+                        transform: translate(-3px, 1px) rotate(0deg);
+                    }
+                    70% {
+                        transform: translate(3px, 1px) rotate(-1deg);
+                    }
+                    80% {
+                        transform: translate(-1px, -1px) rotate(1deg);
+                    }
+                    90% {
+                        transform: translate(1px, 2px) rotate(0deg);
+                    }
+                    100% {
+                        transform: translate(1px, -2px) rotate(-1deg);
+                    }
+                }
+                .close-modal {
+                    margin-left: 0.5vw;
+                    background-color: $color1;
+                    padding: 0.5vh 1vw;
+                    border-radius: 25px;
+                    border: none;
+                    font-size: 0.9em;
+                    color: white;
+                }
+                .close-modal:hover {
+                    cursor: pointer;
+                    animation: shake 0.5s;
+                }
+                // .macaroondiv {
+                //     width: 5vw;
+                //     height: 3vh;
+                //     margin-bottom: 4vh;
+                //     margin-left: 1vw;
+                //     .macpicdiv {
+                //         background-image: url('../../images/littlemacaroons.png');
+                //         background-repeat: no-repeat;
+                //         background-size: contain;
+                //         background-position: center;
+                //         height: 6vh;
+                //         width: 6vw;
+                //     }
+                //     .macpicdiv:hover {
+                //         background-image: url('../../images/bigmacaroon.png');
+                //         background-repeat: no-repeat;
+                //         background-size: contain;
+                //         background-position: center;
+                //         height: 7vh;
+                //     }
+                // }
+            }
+        }
+    }

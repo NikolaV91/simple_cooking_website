@@ -1,0 +1,14 @@
+@import '../../variables';
+.footerwrap {
+    padding: 2vh 3vw;
+    background-color: $color3;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: "Poppins", sans-serif;
+    span {
+        color: $color1;
+        font-family: "Water Brush", cursive;
+    }
+}

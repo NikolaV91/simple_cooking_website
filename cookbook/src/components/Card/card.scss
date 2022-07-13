@@ -1,0 +1,94 @@
+@import '../../base';
+@import '../../variables';
+.card {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 7px;
+    border: 3px solid white;
+    margin-right: 2vw;
+    min-height: 20vh;
+    width: 20.5vw;
+    .cardimg {
+        width: 20vw;
+        max-height: 22vh;
+        border-radius: 7px 7px 0px 0px
+    }
+    .cardmealtitle {
+        letter-spacing: 0.1em;
+        font-size: 0.9em;
+    }
+    .btnwrap {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        .openbtn {
+            width: 2vw;
+            background-image: url('../../images/newsearch.png');
+            background-color: $color1;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 2.2vh;
+            border-radius: 7px 0px 0px 7px;
+            border: none;
+            margin-left: 1vw;
+        }
+        .openbtn:hover {
+            cursor: pointer;
+            animation: shake 0.5s;
+        }
+        .closeBtn {
+            width: 2vw;
+            background-image: url('../../images/iks.png');
+            background-color: $color2;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 2.2vh;
+            border-radius: 0px 7px 7px 0px;
+            border: none;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .closeBtn:hover {
+            cursor: pointer;
+            animation: shake 0.5s;
+        }
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    }
+}

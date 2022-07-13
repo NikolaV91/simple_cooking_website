@@ -1,0 +1,110 @@
+    @import '../../base';
+    @import '../../variables';
+    .confirm-modal-wrap {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        background-color: rgba(128, 128, 128, 0.8);
+        width: 100%;
+        min-height: 150%;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        .confirm-modal {
+            // z-index: 20;
+            position: fixed;
+            left: 35%;
+            top: 30%;
+            width: 25%;
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: white;
+            border-radius: 25px;
+            border: none;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            h3 {
+                color: $color3;
+                font-family: "Poppins";
+                font-weight: 500;
+                font-size: 1.5em;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            .btnDiv {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                .yesBtn {
+                    background-color: $color2;
+                    color: $color3;
+                    font-family: "Water Brush", cursive;
+                    font-size: 1.2em;
+                    letter-spacing: 1.8px;
+                    font-weight: bold;
+                    width: 5vw;
+                    height: 4vh;
+                    border: none;
+                    border-radius: 15px;
+                }
+                .yesBtn:hover {
+                    cursor: pointer;
+                    animation: shake 0.5s;
+                }
+                .noBtn {
+                    background-color: $color1;
+                    color: $color3;
+                    font-family: "Water Brush", cursive;
+                    font-size: 1.2em;
+                    letter-spacing: 1.8px;
+                    font-weight: bold;
+                    width: 5vw;
+                    height: 4vh;
+                    border: none;
+                    border-radius: 15px;
+                }
+                .noBtn:hover {
+                    cursor: pointer;
+                    animation: shake 0.5s;
+                }
+                @keyframes shake {
+                    0% {
+                        transform: translate(1px, 1px) rotate(0deg);
+                    }
+                    10% {
+                        transform: translate(-1px, -2px) rotate(-1deg);
+                    }
+                    20% {
+                        transform: translate(-3px, 0px) rotate(1deg);
+                    }
+                    30% {
+                        transform: translate(3px, 2px) rotate(0deg);
+                    }
+                    40% {
+                        transform: translate(1px, -1px) rotate(1deg);
+                    }
+                    50% {
+                        transform: translate(-1px, 2px) rotate(-1deg);
+                    }
+                    60% {
+                        transform: translate(-3px, 1px) rotate(0deg);
+                    }
+                    70% {
+                        transform: translate(3px, 1px) rotate(-1deg);
+                    }
+                    80% {
+                        transform: translate(-1px, -1px) rotate(1deg);
+                    }
+                    90% {
+                        transform: translate(1px, 2px) rotate(0deg);
+                    }
+                    100% {
+                        transform: translate(1px, -2px) rotate(-1deg);
+                    }
+                }
+            }
+        }
+    }
