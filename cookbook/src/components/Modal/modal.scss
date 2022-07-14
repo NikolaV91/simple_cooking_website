@@ -19,7 +19,7 @@
             input{
                 margin-bottom: 2vh;
             }
-            .menutitle {
+            .menuTitle {
                 font-family: "Serif";
                 font-size: 2em;
                 letter-spacing: 2px;
@@ -28,6 +28,7 @@
                 display: block;
                 border-bottom: 1px solid gray;
                 width: 100%;
+                margin-top: 2vh;
             }
             .titles {
                 font-size: 1.2em;
@@ -62,7 +63,8 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                margin-bottom: 1vh;
+                margin-bottom: 2.5vh;
+
                 .submitBtn {
                     background-color: rgb(106, 211, 106);
                     padding: 0.5vh 1vw;

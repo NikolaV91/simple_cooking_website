@@ -54,7 +54,7 @@ const Modal = (props) => {
 
             <div className="modal-content">
 
-                <p className='menutitle'>Your recipes</p>
+                <p className='menuTitle'>Create New Recipe</p>
 
                 <p className='titles'>Your dish's name:</p>
                 <input type="text" name="meal" id="meal" className='modalinput' onChange={(e) => setRecipe({
