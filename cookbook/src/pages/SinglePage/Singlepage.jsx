@@ -5,7 +5,6 @@ import ConfirmModal from '../../components/confirmModal/ConfirmModal';
 import "./single.scss";
 
 const SinglePage = (props) => {
-  // console.log(props);
 
 
   const deleteRecipeSingle = () => {
@@ -27,20 +26,17 @@ const SinglePage = (props) => {
 
   return (
     <div className="single-page">
-       {props.confirmModal === "open" ? <ConfirmModal deleteRecipeSingle={deleteRecipeSingle} selectedRecipeId={props.selectedRecipeId} setShouldUpdate={props.setShouldUpdate} recipe={props.recipe} changeConfirmModal={props.changeConfirmModal}/> : null}
+      {props.confirmModal === "open" ? <ConfirmModal deleteRecipeSingle={deleteRecipeSingle} selectedRecipeId={props.selectedRecipeId} setShouldUpdate={props.setShouldUpdate} recipe={props.recipe} changeConfirmModal={props.changeConfirmModal} /> : null}
       <div className="btnWrap">
         {/* <Link to={`/`}> */}
-          <button
-            onClick={(e) => {
-              // deleteRecipeSingle();
-              // e.stopPropagation();
-              // e.preventDefault();
-              props.changeConfirmModal("open");
-            }}
-            className="deleteBtn"
-          >
-            Delete Recipe
-          </button>
+        <button
+          onClick={(e) => {
+            props.changeConfirmModal("open");
+          }}
+          className="deleteBtn"
+        >
+          Delete Recipe
+        </button>
         {/* </Link> */}
 
         <Link to={`/`}>
@@ -77,13 +73,13 @@ const SinglePage = (props) => {
         </div>
 
         <p>
-          Is Vegan:{" "}
+          Vegan: 
           {props.recipe.isVegan.toString((e) => (
             <li >{e}</li>
           ))}
         </p>
         <p>
-          is Vegetarian:{" "}
+          Vegetarian:  
           {props.recipe.isVegetarian.toString((e) => (
             <li >{e}</li>
           ))}

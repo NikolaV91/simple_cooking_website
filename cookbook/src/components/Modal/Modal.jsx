@@ -13,8 +13,8 @@ const Modal = (props) => {
             ingredients: [],
             countryOfOrigin: '',
             mealType: [],
-            isVegan: false,
-            isVegetarian: false
+            isVegan: "No",
+            isVegetarian: "No"
         }
     })
 
@@ -54,8 +54,6 @@ const Modal = (props) => {
 
             <div className="modal-content">
 
-
-
                 <p className='menutitle'>Your recipes</p>
 
                 <p className='titles'>Your dish's name:</p>
@@ -63,59 +61,73 @@ const Modal = (props) => {
                     ...recipe,
                     meal: e.target.value
                 })} />
-                <br />
                 <p className='titles'>Preparing time:</p>
                 <input type="number" name="prepTime" id="prepTime" className='modalinput' onChange={(e) => setRecipe({
                     ...recipe,
                     prepTime: e.target.value
                 })} />
-                <br />
                 <p className='titles'>Origin of dinner:</p>
                 <input type="text" name="" id="" className='modalinput' onChange={(e) => setRecipe({
                     ...recipe,
                     countryOfOrigin: e.target.value
                 })} />
-                <br />
                 <p className='titles'>Ingredients: (use comma)</p>
                 <input type="text" name="" id="" className='modalinput' onChange={(e) => setIngredients(e.target.value)} />
-                <br />
                 <p className='titles'>Nivo tezine:</p>
                 <input type="number" name="level" id="level" className='modalinput' onChange={(e) => setRecipe({
                     ...recipe,
                     level: e.target.value
                 })} />
-                <br />
-                <p className='titles'>Meal image: (link)</p>
+                <p className='titles'>Meal image: (URL)</p>
                 <input type="text" name="image" id="image" className='modalinput' onChange={(e) => setRecipe({
                     ...recipe,
                     image: e.target.value
                 })} />
-                <br />
                 <p className='titles'>Type of dish: (use comma)</p>
                 <input type="text" name="" id="" className='modalinput' onChange={(e) => setMealType(e.target.value)} />
-                <br />
 
                 <div className='radioflex'>
-                    <p className='titles'>Is it vegan: </p>
-                    <input type="radio" name="isVegan" id="isVegan"  className='answ' /> Yes<span></span>
-                    <input type="radio" name="isVegan" id="isVegan"  className='answ'/> No
+                    <p className='titles'>Vegan:</p>
+                    <div>
+                        <input type="radio" name="isVegan" id="isVegan" value="Yes"
+                            onChange={(e) => setRecipe({
+                                ...recipe,
+                                isVegan: e.target.value
+                            })}
+                            className='answ' />Yes
+                        <input type="radio" name="isVegan" id="isVegan" value="No"
+                            onChange={(e) => setRecipe({
+                                ...recipe,
+                                isVegan: e.target.value
+                            })}
+                            className='answ' />No
+                    </div>
                 </div>
 
                 <br />
                 <div className='radioflex'>
-                    <p className='titles'>Is it vegetarian: </p>
-                    <input type="radio" name="isVegetarian" id="isVegetarian" className='answ' />Yes <span></span>
-                    <input type="radio" name="isVegetarian" id="isVegetarian"  className='answ'/>No
+                    <p className='titles'>Vegetarian:</p>
+                    <div>
+                        <input type="radio" name="isVegetarian" id="isVegetarian" value="Yes"
+                            onClick={(e) => setRecipe({
+                                ...recipe,
+                                isVegetarian: e.target.value
+                            })}
+                            className='answ' />Yes
+                        <input type="radio" name="isVegetarian" id="isVegetarian" value="No"
+                            onClick={(e) => setRecipe({
+                                ...recipe,
+                                isVegetarian: e.target.value
+                            })}
+                            className='answ' />No
+                    </div>
                 </div>
 
                 <br />
 
                 <div className='divbtn'>
-                    <div className='macaroondiv'>
-                        <div className='macpicdiv'></div>
-                    </div>
-                    <button className="close-modal" onClick={() => props.setModal(false)}>Cancel</button>
                     <button className='submitBtn' onClick={submitRecipe}>Add your recipe</button>
+                    <button className="close-modal" onClick={() => props.setModal(false)}>Cancel</button>
                 </div>
 
 

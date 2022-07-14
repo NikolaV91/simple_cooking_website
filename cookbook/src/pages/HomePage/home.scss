@@ -102,7 +102,7 @@
                 justify-content: flex-start;
 
                 .artistText_01 {
-                    font-family: "Arial";
+                    font-family: "Serif";
                     text-align: center;
                     color: $color3;
                     letter-spacing: 0.2em;
@@ -145,7 +145,7 @@
             padding: 1.5vh 2vw;
 
             .artistText_01 {
-                font-family: "Arial", cursive;
+                font-family: "Serif";
                 text-align: center;
                 color: $color3;
                 letter-spacing: 0.2em;
@@ -189,7 +189,7 @@
 
             .foodTitle {
                 font-size: 1.2em;
-                font-family: "Arial", cursive;
+                font-family: "Serif", cursive;
             }
 
             .div_food_wrapper_01 {
@@ -233,7 +233,7 @@
 
             .title {
                 text-align: center;
-                font-family: "Arial", cursive;
+                font-family: "Serif";
                 font-size: 2em;
                 letter-spacing: 0.3em;
                 margin-top: 2vh;
@@ -307,7 +307,7 @@
 
             .searchTitle {
                 text-align: center;
-                font-family: "Arial", cursive;
+                font-family: "Serif";
                 font-size: 2em;
                 letter-spacing: 1px;
                 margin-top: 3vh;
@@ -335,9 +335,6 @@
                         border-style: none;
                         outline: none;
                         cursor: pointer;
-                        // border-radius: 20%;
-                        // position: absolute;
-                        // background-color: transparent;
                         background-color: $color2;
                         pointer-events: painted;
                         background-image: url('../../images/newsearch.png');
@@ -375,16 +372,25 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
 
         .div_sec05_card_wrapper_01 {
-            h3 {
-                padding-left: 4vw;
-            }
-
             margin-bottom: 7vh;
             display: flex;
             flex-direction: column;
             width: 100vw;
+            border-bottom: 1px solid rgb(121, 207, 121);
+            border-left: 1px solid rgb(121, 207, 121);
+            border-right: 1px solid rgb(121, 207, 121);
+            margin-left: 2vw;
+            margin-right: 2vw;
+            padding-bottom: 2vh;
+            width: 80%;
+
+            
+            h3 {
+                padding-left: 4vw;
+            }
 
             .foodCard {
                 display: flex;

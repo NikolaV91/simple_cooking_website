@@ -1,14 +1,17 @@
 @import '../../base';
 @import '../../variables';
+
 .single-page {
     width: 100%;
     min-height: 105vh;
     position: relative;
+
     .btnWrap {
         position: absolute;
         top: 2vh;
         right: 5vw;
         margin-bottom: 3v;
+
         .single-pageBtn {
             padding: 0.5vh 1vw;
             border-radius: 8px;
@@ -21,10 +24,12 @@
             font-weight: bold;
             margin-left: 0.5vw;
         }
+
         .single-pageBtn:hover {
             cursor: pointer;
             animation: shake 0.5s;
         }
+
         .deleteBtn {
             padding: 0.5vh 1vw;
             border-radius: 8px;
@@ -36,46 +41,59 @@
             letter-spacing: 1px;
             font-weight: bold;
         }
+
         .deleteBtn:hover {
             cursor: pointer;
             animation: shake 0.5s;
         }
+
         @keyframes shake {
             0% {
                 transform: translate(1px, 1px) rotate(0deg);
             }
+
             10% {
                 transform: translate(-1px, -2px) rotate(-1deg);
             }
+
             20% {
                 transform: translate(-3px, 0px) rotate(1deg);
             }
+
             30% {
                 transform: translate(3px, 2px) rotate(0deg);
             }
+
             40% {
                 transform: translate(1px, -1px) rotate(1deg);
             }
+
             50% {
                 transform: translate(-1px, 2px) rotate(-1deg);
             }
+
             60% {
                 transform: translate(-3px, 1px) rotate(0deg);
             }
+
             70% {
                 transform: translate(3px, 1px) rotate(-1deg);
             }
+
             80% {
                 transform: translate(-1px, -1px) rotate(1deg);
             }
+
             90% {
                 transform: translate(1px, 2px) rotate(0deg);
             }
+
             100% {
                 transform: translate(1px, -2px) rotate(-1deg);
             }
         }
     }
+
     .singlecard {
         position: absolute;
         width: 40vw;
@@ -84,37 +102,42 @@
         left: 50%;
         transform: translate(-50%, -50%);
         margin-bottom: 5vh;
-        font-family: "Poppins", sans-serif;
+        font-family: "Arial";
         font-size: 1em;
         letter-spacing: 1px;
         padding-bottom: 2vh;
         border-radius: 25px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
         .cardImg {
-            width: 40vw;
+            width: 30vw;
             border-radius: 25px 25px 5px 5px;
-            margin-bottom: 3vh;
         }
+
         .mainTitle {
-            font-family: "Water Brush", cursive;
+            font-family: "Arial";
             font-size: 2em;
             letter-spacing: 1.5px;
             margin-bottom: 2vh;
             margin-left: 2vw;
         }
+
         p {
             margin-bottom: 1vh;
             margin-left: 2vw;
         }
+
         .inglist {
             list-style: none;
             counter-reset: my-awesome-counter;
             margin-left: 2vw;
+
             li {
                 counter-increment: my-awesome-counter;
                 margin: 0.25rem;
-                font-family: "Water Brush", cursive;
+                font-family: "Arial";
             }
+
             li::before {
                 content: counter(my-awesome-counter);
                 background: $color1;
@@ -128,15 +151,19 @@
                 margin-right: 0.5rem;
             }
         }
+
         .mealtypewrap {
             display: flex;
             margin-top: 1.5vh;
+
             p {
                 margin-right: 1vw;
             }
+
             .mealtype {
                 display: flex;
                 flex-direction: row;
+
                 li {
                     margin-right: 2vw;
                 }
