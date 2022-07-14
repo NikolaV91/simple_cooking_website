@@ -42,7 +42,7 @@ const Modal = (props) => {
 
     const setMealType = (recipeValue) => {
         const arr = recipeValue.split(',')
-        setMealType({
+        setRecipe({
             ...recipe,
             mealType: arr
         })

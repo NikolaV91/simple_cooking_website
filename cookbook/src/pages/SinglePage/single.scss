@@ -4,7 +4,7 @@
 .single-page {
     width: 100%;
     min-height: 105vh;
-    position: relative;
+    // position: relative;
 
     .btnWrap {
         position: absolute;
@@ -23,6 +23,8 @@
             letter-spacing: 1px;
             font-weight: bold;
             margin-left: 0.5vw;
+            position: relative;
+            top: 13vh;
         }
 
         .single-pageBtn:hover {
@@ -40,6 +42,8 @@
             font-size: 0.8em;
             letter-spacing: 1px;
             font-weight: bold;
+            position: relative;
+            top: 13vh;
         }
 
         .deleteBtn:hover {
@@ -95,10 +99,11 @@
     }
 
     .singlecard {
-        position: absolute;
-        width: 40vw;
+        background-color: antiquewhite;
+        position: relative;
+        max-width: 35vw;
         min-height: 60vh;
-        top: 50%;
+        top: 60vh;
         left: 50%;
         transform: translate(-50%, -50%);
         margin-bottom: 5vh;
@@ -110,8 +115,10 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         .cardImg {
-            width: 30vw;
+            height: 50vh;
+            width: 100%;
             border-radius: 25px 25px 5px 5px;
+
         }
 
         .mainTitle {
@@ -169,5 +176,9 @@
                 }
             }
         }
+    }
+    .boxShadow{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
     }
 }

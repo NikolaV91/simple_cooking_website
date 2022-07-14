@@ -49,7 +49,7 @@ const SinglePage = (props) => {
         </Link>
       </div>
 
-      <div className="singlecard">
+      <div className="singlecard boxShadow">
         <img className="cardImg" src={props.recipe.image} alt="meal" />
         <p className="mainTitle">~{props.recipe.meal}~</p>
         <p>Country of origin: {props.recipe.countryOfOrigin}</p>
@@ -65,10 +65,9 @@ const SinglePage = (props) => {
         <div className="mealtypewrap">
           <p> Meal type:</p>
           <div className="mealtype">
-            {" "}
             {props.recipe.mealType.map((e) => (
               <li >{e}</li>
-            ))}{" "}
+            ))}
           </div>
         </div>
 
